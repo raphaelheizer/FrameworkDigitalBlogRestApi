@@ -1,0 +1,194 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.9 (Ubuntu 12.9-0ubuntu0.20.04.1)
+-- Dumped by pg_dump version 12.9 (Ubuntu 12.9-0ubuntu0.20.04.1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+DROP DATABASE "frameworkdigitalblog";
+--
+-- Name: frameworkdigitalblog; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+CREATE DATABASE "frameworkdigitalblog" WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'pt_BR.UTF-8' LC_CTYPE = 'pt_BR.UTF-8';
+
+
+ALTER DATABASE "frameworkdigitalblog" OWNER TO "postgres";
+
+\connect "frameworkdigitalblog"
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Data for Name: blog_post; Type: TABLE DATA; Schema: blog; Owner: postgres
+--
+
+INSERT INTO "blog"."blog_post" ("id", "title", "content", "author", "view_count", "timestamp", "category") OVERRIDING SYSTEM VALUE VALUES (11, 'Colocando as bordas arredondadas em um card html', 'Para colocar as bordas arredondadas em um card HTML utilize o estilo abaixo:
+
+border-radius: 5px;', 1, 731, '2021-11-22 20:01:39.808607', 'Tecnologia');
+INSERT INTO "blog"."blog_post" ("id", "title", "content", "author", "view_count", "timestamp", "category") OVERRIDING SYSTEM VALUE VALUES (12, 'Colocando uma box-shadow em um card html', 'Para colocar uma box-shadow em um card html, utilize o estilo abaixo:
+
+box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);', 1, 18, '2021-11-22 20:02:15.073608', 'Tecnologia');
+INSERT INTO "blog"."blog_post" ("id", "title", "content", "author", "view_count", "timestamp", "category") OVERRIDING SYSTEM VALUE VALUES (14, 'Configurando proxy no PGAdmin', 'Um recurso muito útil e pouco conhecido do PGAdmin é a possibilidade de configurar um proxy. Para isso siga os passos abaixo:
+
+Clique com o botão direito sobre Servers no PGAdmin
+Selecione a opção Create > Server
+Na aba Geral coloque o nome do seu servidor de Banco de Dados
+Clique na aba Connections e configure o acesso ao seu Banco de Dados
+Cliente na aba SSH Tunnel e habilite a opção Use SSH tunneling
+Preencha os campos de Tunnel host, Tunnel port e Username
+Insira o caminho do seu arquivo .pem no campo Identity file
+Pronto, seu proxy está criado e pronto para liberar o acesso ao banco de dados via PGAdmin', 1, 17, '2021-11-22 20:03:51.473665', 'Tecnologia');
+INSERT INTO "blog"."blog_post" ("id", "title", "content", "author", "view_count", "timestamp", "category") OVERRIDING SYSTEM VALUE VALUES (15, 'Comandos para checagem de memória no Android via linha de comando', 'Para a checagem de memória do Android via linha de comando adb shell os comandos mais utilizo são:
+
+ps ou ps -ef ou ps -ef | grep [ o processo ]
+top ou top | grep [ o processo ]
+cat /proc/meminfo
+vmstat
+busybox free -m (precisa ter o busybox instalado)
+dumpsys meminfo', 1, 264, '2021-11-22 20:05:09.666349', 'Tecnologia');
+INSERT INTO "blog"."blog_post" ("id", "title", "content", "author", "view_count", "timestamp", "category") OVERRIDING SYSTEM VALUE VALUES (16, 'Teste de formatação + imagem e link com receita de bolo de fubá', 'Vamos lá:
+			
+- 3 ovos inteiros
+- 2 xícaras (chá) de açúcar
+- 2 xícaras (chá) de fubá
+- 3 colheres (sopa) de farinha de trigo
+- 1/2 copo (americano) de óleo
+- 1 copo (americano) de leite
+- 1 colher (sopa) de fermento em pó
+			
+1 - Em um liquidificador, adicione os ovos, o açúcar, o fubá, a farinha de trigo, o óleo, o leite e o fermento, depois bata até a massa ficar lisa e homogênea.
+2 - Despeje a massa em uma forma untada e polvilhada.
+3 - Leve para assar em forno médio 180 °C) preaquecido por 40 minutos.
+		
+E o bolo de fubá é aquela receita caseira que sempre faz sucesso na hora do lanche, não é mesmo? E se você, assim como a gente, ama uma receita de bolo fofinho e prático, confira essa lista de preparos superfáceis do TudoGostoso! Veja a matéria do blog e corra para a cozinha para preparar essas maravilhas. 
+E para aqueles apaixonados em um bolo gelado, a gente também tem a lista certa! Esses preparos ficam incríveis para aqueles dias mais quentes, que a gente quer comer um docinho e ainda se refrescar. Veja a matéria do blog e comece a fazer as receitas de bolo gelado preferidas da sua família!
+Você sabe o que é o fubá? Ele nada mais é que uma farinha de milho feita de grãos médios. Com esse ingredientes superversátil podemos preparar uma série de pratos gostosos como angu, cremes, broa, biscoito, pães, etc E se você, assim como a gente, adora uma boa receita com fubá, fique ligado nessa lista incrível do blog do TudoGostoso. Nela você vai encontrar opções fáceis e deliciosas usando esse ingrediente econômico e que achamos com facilidade no mercado. Confira a matéria e corra para a cozinha para preparar seu prato favorito!
+
+<div style="display: flex; flex-grow: 1; justify-content: center">
+<img src="https://conteudo.imguol.com.br/c/entretenimento/9f/2020/06/15/bolo-de-fuba-1592241605327_v2_450x337.jpg" alt="bolo de fubá"/>
+</div>
+		
+Link original: <a href="https://www.tudogostoso.com.br/receita/9254-bolo-de-fuba.html">Tudo gostoso</a>', 1, 264, '2021-11-22 20:11:31.482287', 'Bolo!');
+INSERT INTO "blog"."blog_post" ("id", "title", "content", "author", "view_count", "timestamp", "category") OVERRIDING SYSTEM VALUE VALUES (13, 'O Uso do PiJ4 para Raspberry GPIO com Java', 'O Uso do PiJ4 para Raspberry GPIO com Java
+Internet das coisas (IOT) já é uma realidade com a qual convivemos todos os dias. Novos produtos envolvendo hardwares diversos são lançados com uma frequência tal que mal conseguimos acompanhar. Neste artigo vou falar um pouco de como utilizar uma placa Raspberry para desenvolver produtos IOT utilizando a linguagem Java.
+O Projeto Pi4J foi lançado em 2012, no mesmo ano em que o Raspberry Pi foi apresentado como uma ferramenta para fornecer aos desenvolvedores Java uma biblioteca de interface orientada a objetos simples e familiar para acessar os recursos de E / S de baixo nível do Raspberry Pi, incluindo GPIO, I2C , SPI, PWM e comunicações seriais.
+
+A ideia do Projeto Pi4J é fornecer uma biblioteca de API amigável com Java, rica e poderosa, mas simples de usar, permitindo o acesso programático aos recursos de I / O (GPIO) de hardware de baixo nível de plataformas incorporadas, como o Raspberry Pi.
+
+Para usar o Pi4J V2, você precisará do Java 11 ou mais recente. Felizmente, esta versão está incluída na versão atual do Raspberry Pi OS. As libs para o PiJ4 podem ser baixadas pelo link <a href="https://pi4j.com/1.2/download.html">https://pi4j.com/1.2/download.html.</a> Feito isto, basta você criar seu projeto Java e começar a utilizar os recursos.
+
+Antes de interagir com Pi4J, você deve primeiro criar uma nova instância do controlador GPIO. O GpioFactory inclui um método createInstance para criar o controlador GPIO. Seu projeto deve instanciar apenas uma única instância do controlador GPIO e essa instância deve ser compartilhada em seu projeto.
+
+final GpioController gpio = GpioFactory.getInstance();
+Para acessar um pin GPIO, você deve primeiro provisionar o pino. O provisionamento configura o pino com base em como você pretende usá-lo. O provisionamento pode exportar automaticamente o pino, definir sua direção e configurar qualquer detecção de borda para eventos baseados em interrupção. 
+
+GpioPinDigitalInput myButton = gpio.provisionDigitalInputPin(RaspiPin.GPIO_02,                                                                               "MyButton", PinPullResistance.PULL_DOWN); 
+
+GpioPinDigitalOutput myLed = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04,                                                            "My LED",           
+PinState.LOW);
+
+
+Pi4J fornece vários métodos convenientes para controlar ou 
+gravar um estado em um pino GPIO. Os exemplos abaixo demonstram alguns dos métodos de controle que você pode invocar em um pino GPIO:
+
+
+ // explicitly set a state on the pin object
+        myLed.setState(PinState.HIGH);
+
+        // use convenience wrapper method to set state on the pin object
+        myLed.low();
+        myLed.high();
+
+        // use toggle method to apply inverse state on the pin object
+        myLed.toggle();
+
+        // use pulse method to set the pin to the HIGH state for
+        // an explicit length of time in milliseconds
+        myLed.pulse(1000);
+
+Conforme vimos, o uso da biblioteca Pi4J é extremamente simples e seu uso na prática mostra-se realmente interessante. Agora que você já conhece este recurso, que tal criar seu próprios projetos IOT utilizando Rasp e Java?', 1, 18, '2021-11-22 20:03:04.309419', 'Tecnologia');
+
+
+--
+-- Data for Name: post_comment; Type: TABLE DATA; Schema: blog; Owner: postgres
+--
+
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (5, 'Olá! Aliás, este é o priemiro comentário!', 1, 11);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (6, 'E este é o segundo!', 1, 11);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (7, 'Belo post! Informativo!', 1, 12);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (8, 'A melhor parte é quando começa!', 1, 13);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (9, 'Hello world!', 1, 14);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (10, 'Fica fácil com o tempo!', 1, 15);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (11, 'Vamos testar este com vários comentários.', 1, 16);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (12, 'Hello there!', 1, 16);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (13, 'Vamos testar com um comentário longo. 60 palavras. Lorem ipsum generator. Links funcionam: <a href="https://www.lipsum.com/feed/html">lorem ipsum generator<a/>', 1, 16);
+INSERT INTO "blog"."post_comment" ("id", "content", "user", "post") VALUES (14, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor eget erat id consequat. Nulla id sodales risus. Curabitur vestibulum, massa sed placerat varius, ligula enim vulputate arcu, in elementum erat lacus a eros. Nam mollis, libero eu fermentum venenatis, sapien sem lacinia sem, at dictum nulla ante non odio. Cras facilisis ex ex, vitae finibus purus accumsan ac. Donec.', 1, 16);
+
+
+--
+-- Data for Name: post_image; Type: TABLE DATA; Schema: blog; Owner: postgres
+--
+
+
+
+--
+-- Data for Name: users; Type: TABLE DATA; Schema: blog; Owner: postgres
+--
+
+INSERT INTO "blog"."users" ("id", "first_name", "last_name", "email") OVERRIDING SYSTEM VALUE VALUES (1, 'Raphael', 'Heizer', 'raphaelheizer@gmail.com');
+INSERT INTO "blog"."users" ("id", "first_name", "last_name", "email") OVERRIDING SYSTEM VALUE VALUES (2, 'Ane', 'Heizer', 'aneheizer@fakeemail.com');
+
+
+--
+-- Name: blog_post_id_seq; Type: SEQUENCE SET; Schema: blog; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"blog"."blog_post_id_seq"', 16, true);
+
+
+--
+-- Name: post_comment_id_seq; Type: SEQUENCE SET; Schema: blog; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"blog"."post_comment_id_seq"', 14, true);
+
+
+--
+-- Name: post_image_id_seq; Type: SEQUENCE SET; Schema: blog; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"blog"."post_image_id_seq"', 1, false);
+
+
+--
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: blog; Owner: postgres
+--
+
+SELECT pg_catalog.setval('"blog"."users_id_seq"', 2, true);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
